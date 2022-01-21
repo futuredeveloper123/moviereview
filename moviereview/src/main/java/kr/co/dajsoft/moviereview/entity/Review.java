@@ -1,4 +1,4 @@
-package entity;
+package kr.co.dajsoft.moviereview.entity;
 
 import lombok.*;
 
@@ -19,6 +19,8 @@ public class Review extends BaseEntity {
     //관계만들어줘야햐니까 movie and memeber있어야함
     private Movie movie;
 
+    //fetch를 설정하지 않으면 review정보를 가져올 때 join을 해서 데이터를 가져옴
+    //fetch type을 lazy로 설정하면 처음에는가져오지않음
     @ManyToOne(fetch = FetchType.LAZY)
     private Member member;
 

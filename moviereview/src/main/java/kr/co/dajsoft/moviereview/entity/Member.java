@@ -1,4 +1,4 @@
-package entity;
+package kr.co.dajsoft.moviereview.entity;
 
 import lombok.*;
 

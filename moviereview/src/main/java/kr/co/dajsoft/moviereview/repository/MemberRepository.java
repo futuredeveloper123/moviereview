@@ -1,6 +1,8 @@
-package repository;
+package kr.co.dajsoft.moviereview.repository;
 
-import entity.Member;
+
+
+import kr.co.dajsoft.moviereview.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
